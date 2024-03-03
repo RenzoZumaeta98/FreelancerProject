@@ -1,0 +1,4 @@
+Archivo CSS para que las paginas se vean igual en todos los navegadores
+
+-Buscar Normalize.css en Google
+-Copiar docuemnto y colocar en una hoja de estilos diferene

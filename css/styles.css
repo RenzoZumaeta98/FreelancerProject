@@ -1,0 +1,140 @@
+/*CUSTOM PROPERTIES */
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+    --fuente-principal: 3.8rem;
+}
+
+/*Configuracion para trabaja con REM */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*Recomendation from Paul Irish for my CSS going forward */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+body{
+    font-size:  16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+/* ////////////////////////////////////// */
+
+.titulo{
+    text-align: center;
+    color: var(--oscuro);
+}
+
+.titulo span{
+    font-size: 2rem;
+    color: var(--oscuro);
+}
+
+.contenedor{
+    max-width:120rem;
+    margin: 0 auto;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 240px){
+    .boton{
+        width: auto;
+    }
+}
+
+.nav-bg{
+    background-color: var(--secundario);   
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    
+.navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+
+    }
+}
+
+.navegacion-principal a{
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+/* .navegacion-principal a:visited{
+    color: red;
+} */
+
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 450px;
+
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2, .contenido-hero p{
+    color: var(--blanco);
+}

@@ -1,0 +1,10 @@
+Recomendacion de Paul Irish para el Box Model
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*Recomendation from Paul Irish for my CSS going forward */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}

@@ -1,0 +1,30 @@
+Para que un sitio sea renponsive, se usan Media Queryes
+
+@media (min-width: 1200px){
+    body{
+        background-color: blue;
+    }
+}			-->>>Cuando la pantalla sea mayor de 1200px, se aplicaran esos estilos
+
+
+Como crear un atajo para crear facilmente los media query
+-En Visual presionar Ctrl+Shift+P
+-BUscar Usar Snippe
+-Opcion CSS.json
+-Crear el atajo
+
+"Crea un media Querie":{
+	"prefix": "mq",
+	"body" : "@media (min-width: $1){\n    $2\n}"
+}
+
+-Poniendo mq en Visual saldra el atajo que por defecto pondra el cursor en el $1 y en el $2 
+al presionar TAB
+
+
+CONVENCIONES DE TAMAÑOS PARA LE MEDIA QUERY
+
+@media (min-width: 480px){   -->>>>>Celular
+@media (min-width: 768px){   -->>>>>Tablet
+@media (min-width: 1140px){  -->>>>>Laptop
+@media (min-width: 1400px){  -->>>>>PC

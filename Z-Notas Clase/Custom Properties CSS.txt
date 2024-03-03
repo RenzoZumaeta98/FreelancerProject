@@ -1,0 +1,21 @@
+Generar Custom Properties CSS
+
+-Se almacenan como variables para usar como atributos
+/*CUSTOM PROPERTIES */
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+    --fuente-principal: 3.8rem;
+}
+
+-Se aplican:
+.titulo{
+    text-align: center;
+    font-size: var(--fuente-principal);
+    color: var(--primario);
+}
+
